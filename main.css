@@ -10,18 +10,23 @@
     --our-text-grey: #b8b8bb;
 }
 
-* {
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fefeff;
+    background-color: #a1c3ff;
+    
+
+
 }
 
-body {
-    background-color: #181820;
-    color: var(--our-white);
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    padding: 16px;
-    padding-top: 8px;
-}
 
 .hero-title {
     font-size: 24px;
@@ -32,6 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    margin-left: 30px;
 }
 
 .tasks {
@@ -46,22 +52,23 @@ body {
     gap: 8px;
     border-radius: 16px;
     padding: 10px;
-    color: var(--our-text-grey);
+
     font-size: 13px;
     cursor: pointer;
 }
 
 .add-task-box {
+    
     border: rgba(39, 40, 51, 0.6) 2px solid;
 }
 
 
 .add-task-box:hover {
-    background-color: var(--our-grey);
+    background-color: #3474e6;
 }
 
 .pink-box {
-    background-color: #fc76a1;
+    background-color: #3474e6;
     width: 16px;
     height: 16px;
     border-radius: 6px;
@@ -73,11 +80,11 @@ body {
 }
 
 .task-checkbox {
-    border: #fc76a1 2px solid;
+    border: #a1c3ff 2px solid;
     width: 16px;
     height: 16px;
     border-radius: 6px;
-    color: var(--our-black);
+    color: #3474e6;
     padding: 2px;
     display: flex;
     justify-content: center;
@@ -97,11 +104,11 @@ body {
 
 
 .task-box.checked > .task-checkbox {
-    background-color: #fc76a1;
+    background-color: white;
 }
 
 .task-box {
-    background-color: var(--our-grey);
+    background-color: #3474e6;
     transform-style: preserve-3d;
     transform-origin: center right;
     transition: transform 300ms ease-in;
@@ -109,4 +116,57 @@ body {
 
 .task-box:hover {
     transform: rotateY(-10deg);
+}
+/* new css */
+.cont{
+    max-width: 1100px;
+    gap: 18px;
+    margin-left: 30px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.navbar{
+    background: #3474e6;
+    color: white;
+    height: 60px;
+}
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.navbar a:hover{
+    color: #7d9ed865;
+}
+.navbar .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    
+    height: 100%;
+
+}
+.navbar ul li{
+    margin-left: 20px;
+}
+.contf{
+    display: flex;
+    background-color: #181820;
+    justify-content: space-between;
+    
+
+
 }

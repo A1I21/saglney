@@ -90,7 +90,7 @@ function updateHtmlUi() {
 
 		});
 
-		newTaskHtml.addEventListener('');
+		// newTaskHtml.addEventListener('');
 
 		tasksDiv.appendChild(newTaskHtml);
 	}
